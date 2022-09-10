@@ -1,0 +1,19 @@
+package myProject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Muclass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://127.0.0.1:5500/index.html");
+		driver.findElements(By.cssSelector(".container td:nth-of-type(3)"));
+		
+		
+	}
+
+}
